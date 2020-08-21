@@ -1,3 +1,8 @@
+//Business Logic
+
+//UI logic
 $(document).ready(function() {
-event.preventDefault();
-})
+  $("#input").submit(function(){
+    
+  });
+});
