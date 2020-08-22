@@ -16,7 +16,7 @@ function processInput(userInput) {
       stringArray[i] = stringArray[i].replace(stringArray[i], "Won't you be my neighbor?");
     }
   }
-  console.log(stringArray);
+  return stringArray;
 }
 
 
