@@ -7,6 +7,11 @@ function processInput(userInput) {
     numericalArray.push(i);
   }
   stringArray = numericalArray.map(String);
+  for(i = 0; i < stringArray.length; i++) {
+    if ((stringArray[i].indexOf("1") > -1) && (!(stringArray[i].includes("2"))) && (!(stringArray[i].includes("3")))) {
+      stringArray[i] = stringArray[i].replace(stringArray[i], "Beep!");
+    }
+  }
   console.log(stringArray);
 }
 
