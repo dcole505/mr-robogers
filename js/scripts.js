@@ -19,6 +19,11 @@ function processInput(userInput) {
   return stringArray;
 }
 
+function display(displayArray) {
+  $(".rogers-output").text(displayArray);
+  $("#display-result").show();
+}
+
 
 //UI logic
 $(document).ready(function() {
@@ -27,7 +32,7 @@ $(document).ready(function() {
     $("#display-result").hide();
 
     const userInput = parseInt($("input#user-input").val());
-    processInput(userInput);
-
+    const displayArray = processInput(userInput);
+    display(displayArray);
   });
 });
