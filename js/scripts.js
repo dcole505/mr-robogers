@@ -30,9 +30,16 @@ $(document).ready(function() {
   $("#user-input").submit(function(){
     event.preventDefault();
     $("#display-result").hide();
+    $("#submit-button").hide();
+    $("#reset-button").show();
 
     const userInput = parseInt($("input#user-input").val());
     const displayArray = processInput(userInput);
     display(displayArray);
+  });
+  $("#reset-button").click(function(){
+    $("#display-result").hide();
+    $("#submit-button").show();
+    $("#reset-button").hide();
   });
 });

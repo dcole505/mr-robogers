@@ -46,7 +46,7 @@ _The purpose of this project is to solidify concepts of looping and modifying ar
 
 ## Known Bugs
 
-__
+_There are no known bugs at this time._
 
 ## Support and contact details
 

@@ -5,3 +5,7 @@
 #display-result {
   display: none;
 }
+
+#reset-button {
+  display: none;
+}
