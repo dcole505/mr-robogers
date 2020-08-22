@@ -12,6 +12,8 @@ function processInput(userInput) {
       stringArray[i] = stringArray[i].replace(stringArray[i], "Beep!");
     } else if ((stringArray[i].indexOf("2") > -1) && (!(stringArray[i].includes("3")))) {
       stringArray[i] = stringArray[i].replace(stringArray[i], "Boop");
+    } else if (stringArray[i].indexOf("3") > -1) {
+      stringArray[i] = stringArray[i].replace(stringArray[i], "Won't you be my neighbor?");
     }
   }
   console.log(stringArray);
@@ -24,7 +26,7 @@ $(document).ready(function() {
     event.preventDefault();
     $("#display-result").hide();
 
-    const userInput = $("input#user-input").val();
+    const userInput = parseInt($("input#user-input").val());
     processInput(userInput);
 
   });
