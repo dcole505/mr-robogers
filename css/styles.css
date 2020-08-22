@@ -3,15 +3,27 @@ body {
 }
 
 .jumbotron {
-  background-image: url(../img/background.jpg);
-  height: 300px;
+  background-image: url(../img/backdrop-1920.svg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: auto 100%;
-  margin-top: 10px;
+  background-position: center;
+  background-size: cover;
+  background-color: white;
+  color: red;
   text-align: center;
-  border-bottom: 1px solid black;
-  background-color: red;
-  color: white;
+  height: 500px;
+  width: auto;
+}
+
+.form label {
+  display: flex;
+  align-items: center;
+}
+
+form {
+  width: 500px;
+  margin: auto;
+  position: relative;
 }
 
 #display-result {
