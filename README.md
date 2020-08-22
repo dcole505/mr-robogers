@@ -10,6 +10,30 @@ _The purpose of this project is to solidify concepts of looping and modifying ar
 
 ## Specs
 
+* Spec: The program continues to prompt the user for input in the even they enter a non-numerical character
+  * Input: "Dav"
+  * Output: "Please enter a valid numerical input"
+* Spec: The program returns a range of numbers from 0 to the users inputted number
+  * Input: "4"
+  * Output: "0, 1, 2, 3, 4"
+* Spec: The program replaces ALL instances of the number 1 with "Beep!"
+  * Input: "11"
+  * Output: "Beep!, Beep!"
+* Spec: The program replaces ALL instances of the number 2 with "Boop"
+  * Input: "22"
+  * Output: "Boop, Boop"
+* Spec: The program replaces ALL instances of the number 3 with "Won't you be my neighbor?"
+  * Input: "33"
+  * Output: "Won't you be my neighbor?, Won't you be my neighbor?"
+* Spec: The change to number 3 will take precedence over the changes to 1 & 2. Those changes will be ignored.
+  * Input: "123"
+  * Output: "Won't you be my neighbor?"
+* Spec: The change to Number 2 will take precedence over the changes to 1
+  * Input: "12"
+  * Output: "Boop"
+* Spec: The user is able to enter a new number and see new results over and over.
+  * Input: "5"
+  * Output: "'0', 'Beep!', 'Boop', 'Won't you be my neighbor', '4', '5'"/(refresh page to allow the user to input a new number.)
 
 ## Setup/Installation Requirements
 
