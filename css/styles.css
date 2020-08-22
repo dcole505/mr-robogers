@@ -1,5 +1,13 @@
 .jumbotron {
+  background-image: url(../img/background.jpg);
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  margin-top: 10px;
   text-align: center;
+  border-bottom: 1px solid black;
+  background-color: red;
+  color: white;
 }
 
 #display-result {
@@ -8,4 +16,16 @@
 
 #reset-button {
   display: none;
+}
+
+.card {
+  text-align: center;
+}
+
+.card-text {
+  margin: 0px 150px 50px 150px;
+}
+
+#output-rogers {
+  border-radius: 50%;
 }
